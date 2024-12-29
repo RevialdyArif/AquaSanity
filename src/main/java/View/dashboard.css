@@ -1,0 +1,38 @@
+.sidebar{
+    -fx-background-color: #2262C6;
+    -fx-background-radius: 0px 50px 0px 0px;
+}
+.labbtn{
+    -fx-text-fill: #2262C6;
+    -fx-background-color: #FEFFFD;
+    -fx-background-radius: 50px;
+}
+.sidebar-btn{
+    -fx-background-color: transparent;
+}
+.sidebar-btn-text{
+    -fx-text-fill: #A2BEE8;
+}
+.sidebar-btn:hover .sidebar-btn-text{
+    -fx-text-fill: #7AA2E7;
+}
+.signinbtn:hover{
+    -fx-background-color: #000000;
+}
+.signinbtn{
+     -fx-background-color: #2B3595;
+}
+.homepagebtn:hover{
+    -fx-background-color: #262E78;
+}
+.homepagebtn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10;
+}
+.reportbtn:hover{
+    -fx-background-color: #262E78;
+}
+.reportbtn{
+    -fx-background-color:  #2B3595;
+    -fx-background-radius:  10px;
+}

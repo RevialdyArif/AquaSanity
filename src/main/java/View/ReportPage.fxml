@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane prefHeight="600.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportPageController">
+  <content>
+    <AnchorPane prefHeight="1200.0" prefWidth="1120.0">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="74.0" prefHeight="1128.0" prefWidth="266.0" style="-fx-background-color: #2B3595;" styleClass="sidebar" stylesheets="@dashboard.css">
+               <children>
+                  <Pane layoutX="30.0" layoutY="37.0" prefHeight="30.0" prefWidth="180.0" styleClass="labbtn">
+                     <children>
+                        <Label alignment="CENTER" layoutX="58.0" layoutY="6.0" text="Dashboard" textAlignment="CENTER" textFill="#2262c6">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox alignment="CENTER_LEFT" layoutX="55.0" layoutY="122.0" prefHeight="30.0" prefWidth="158.0" styleClass="sidebar-btn-text" stylesheets="@dashboard.css">
+                     <children>
+                        <Button fx:id="HomePage" mnemonicParsing="false" onAction="#toHomePage" style="-fx-background-radius: 10;" styleClass="homepagebtn" stylesheets="@dashboard.css" textAlignment="CENTER">
+                           <graphic>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="54.0" layoutY="185.0" prefHeight="30.0" prefWidth="207.0" styleClass="sidebar-btn-text" stylesheets="@dashboard.css">
+                     <children>
+                        <Button fx:id="InteractiveMap" mnemonicParsing="false" onAction="#toInteractiveMap" style="-fx-background-radius: 10;" styleClass="homepagebtn" stylesheets="@dashboard.css" textFill="WHITE">
+                           <graphic>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Interactive Map" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="58.0" layoutY="250.0" prefHeight="30.0" prefWidth="170.0" styleClass="sidebar-btn-text">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="EducationPage" mnemonicParsing="false" onAction="#toEducationPage" prefHeight="30.0" prefWidth="148.0" style="-fx-background-radius: 10;" styleClass="homepagebtn" stylesheets="@dashboard.css">
+                           <graphic>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Education Page" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="55.0" layoutY="311.0" prefHeight="30.0" prefWidth="169.0" styleClass="sidebar-btn-text">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="Report" mnemonicParsing="false" onAction="#toReport" prefHeight="30.0" prefWidth="83.0" style="-fx-background-radius: 10;" styleClass="homepagebtn" stylesheets="@dashboard.css">
+                           <graphic>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Report" textAlignment="CENTER" wrappingWidth="74.27948069572449">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="53.0" fitWidth="51.0" layoutX="14.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/Homepage-PhotoRoom.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="51.0" layoutX="14.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/Ícono%20Maps%20black-PhotoRoom.png-PhotoRoom.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="69.0" fitWidth="70.0" layoutX="5.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/Books-PhotoRoom.png-PhotoRoom.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="51.0" layoutX="28.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../Downloads/Screenshot%202023-12-18%20162925-PhotoRoom.png-PhotoRoom.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="866.0" layoutY="-86.0" prefHeight="200.0" prefWidth="87.0" rotate="35.0" style="-fx-background-radius: 50; -fx-background-color: #2B3595;" />
+            <AnchorPane layoutX="1033.0" layoutY="-32.0" prefHeight="287.0" prefWidth="87.0" rotate="35.0" style="-fx-background-radius: 50; -fx-background-color: #2B3595;" />
+            <AnchorPane layoutX="960.0" layoutY="-96.0" prefHeight="287.0" prefWidth="87.0" rotate="35.0" style="-fx-background-radius: 50; -fx-background-color: #2B3595;" />
+            <Text fill="#2b3595" layoutX="80.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aqua Sanity">
+               <font>
+                  <Font name="Tahoma Bold" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#2b3595" layoutX="294.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report Page">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text layoutX="294.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Silahkan mengisi report yang disediakan dibawah ini">
+               <font>
+                  <Font name="Tahoma Bold" size="16.0" />
+               </font>
+            </Text>
+            <VBox layoutX="293.0" layoutY="190.0" prefHeight="78.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="474.0" text="Apakah warna air di dalam rumah anda keruh atau memiliki perubahan warna?" />
+                  <CheckBox fx:id="CHECKYES1" mnemonicParsing="false" onAction="#Yes1" text="IYA" />
+                  <CheckBox fx:id="CHECKNO1" mnemonicParsing="false" onAction="#No1" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="293.0" layoutY="268.0" prefHeight="78.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="474.0" text="Apakah airnya memiliki bau yang aneh atau tidak wajar?" />
+                  <CheckBox fx:id="CHECKYES2" mnemonicParsing="false" onAction="#Yes2" text="IYA" />
+                  <CheckBox fx:id="CHECKNO2" mnemonicParsing="false" onAction="#No2" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="293.0" layoutY="346.0" prefHeight="78.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="474.0" text="Apakah air anda memiliki endapan atau ada partikel-partikel yang mengapung?" />
+                  <CheckBox fx:id="CHECKYES3" mnemonicParsing="false" onAction="#Yes3" text="IYA" />
+                  <CheckBox fx:id="CHECKNO3" mnemonicParsing="false" onAction="#No3" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="294.0" layoutY="424.0" prefHeight="78.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="474.0" text="Apakah air anda terasa lengket setelah digunakan?" />
+                  <CheckBox fx:id="CHECKYES4" mnemonicParsing="false" onAction="#Yes4" text="IYA" />
+                  <CheckBox fx:id="CHECKNO4" mnemonicParsing="false" onAction="#No4" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="294.0" layoutY="502.0" prefHeight="78.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="474.0" text="Menurut anda apakah air anda Tidak sesuai dengan standar kebersihan air?" />
+                  <CheckBox fx:id="CHECKYES5" mnemonicParsing="false" onAction="#Yes5" text="IYA" />
+                  <CheckBox fx:id="CHECKNO5" mnemonicParsing="false" onAction="#No5" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="294.0" layoutY="574.0" prefHeight="78.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="474.0" text="Apakah ada sampah yang berserakan di lingkungan sekitar anda?" />
+                  <CheckBox fx:id="CHECKYES6" mnemonicParsing="false" onAction="#Yes6" text="IYA" />
+                  <CheckBox fx:id="CHECKNO6" mnemonicParsing="false" onAction="#No6" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="294.0" layoutY="652.0" prefHeight="78.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="474.0" text="Apakah septic tank di lingkungan anda ada yang tersumbat?" />
+                  <CheckBox fx:id="CHECKYES7" mnemonicParsing="false" onAction="#Yes7" text="IYA" />
+                  <CheckBox fx:id="CHECKNO7" mnemonicParsing="false" onAction="#No7" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="294.0" layoutY="808.0" prefHeight="78.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="474.0" text="Apakah di selokan lingkungan anda tidak ada capung?" />
+                  <CheckBox fx:id="CHECKYES9" mnemonicParsing="false" onAction="#Yes9" text="IYA" />
+                  <CheckBox fx:id="CHECKNO9" mnemonicParsing="false" onAction="#No9" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="293.0" layoutY="886.0" prefHeight="78.0" prefWidth="519.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="533.0" text="Apakah menurut anda fasilitas di lingkungan anda belum memiliki sanitasi yang layak?" />
+                  <CheckBox fx:id="CHECKYES10" mnemonicParsing="false" onAction="#Yes10" text="IYA" />
+                  <CheckBox fx:id="CHECKNO10" mnemonicParsing="false" onAction="#No10" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="293.0" layoutY="730.0" prefHeight="78.0" prefWidth="466.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="474.0" text="Apakah selokan anda kotor dan memiliki bau yang tidak wajar?" />
+                  <CheckBox fx:id="CHECKYES8" mnemonicParsing="false" onAction="#Yes8" text="IYA" />
+                  <CheckBox fx:id="CHECKNO8" mnemonicParsing="false" onAction="#No8" text="TIDAK" />
+               </children>
+            </VBox>
+            <VBox layoutX="295.0" layoutY="964.0" prefHeight="200.0" prefWidth="530.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="KOMENTAR ANDA MENGENAI KEBERSIHAN AIR DAN SANITASI LINGKUNGAN ANDA :" wrappingWidth="525.8867492675781" />
+                  <TextArea fx:id="InsertComment" prefHeight="200.0" prefWidth="545.0" />
+               </children>
+            </VBox>
+            <Button fx:id="SubmitButton" layoutX="856.0" layoutY="1121.0" mnemonicParsing="false" onAction="#SubmitData" prefHeight="43.0" prefWidth="135.0" styleClass="reportbtn" stylesheets="@dashboard.css" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="22.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
